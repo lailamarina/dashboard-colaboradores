@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!-- Diz para o navegador que o documento é HTML5-->
+<html lang="pt-BR"><!--Início do documento HTML, coloquei no idioma português-Brasil-->
+<head><!--Cabeçalho invisível, aqui eu coloco títulos, style, configurações-->
+    <meta charset="UTF-8"><!--permite acentos no site-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Dashboard Colaboradores</title> <!--aqui é o nome da aba do navegador-->
+</head>
+<body> <!--Aqui vai ser o que vai aparecer na página-->
+    <form>
+
+        <label for="usuario">Usuário:</label> <!--<label> é um rótulo do campo-->
+        <input type="text" id="usuario" name="usuario"> <!--é um campo de texto comum-->
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <!--O id="usuario e for="usuario" ligam o label ao campo-->
+
+        <button type="submit">Entrar</button>
+        <!--botão que envia o formulário-->
+    </form>
+    <form onsubmit="event.preventDefault(); window.location.href='dashboard.html';"></form>
+    <!-- 
+    onsubmit - acontece quando o usuário clica em entrar
+    event.preventDefault(); - impedir que a página recarregue
+    window.location.href='dashboard.html; - vai mandar os colaboradores para a página inicial'
+    -->
+
+        
+
+
+        
+
+
+
+    
+</body>
+</html>
