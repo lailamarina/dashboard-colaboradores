@@ -1,4 +1,5 @@
 # dashboard-colaboradores
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 Sistema de dashboard de colaboradores. Projeto em HTML, CSS e JavaScript, para criar um ambiente de login, dashboard de colaboradores, páginas individuais, checklist de tarefas e integração inicial com o google planilhas.
 
 É um projeto de estudo e portfólio.
