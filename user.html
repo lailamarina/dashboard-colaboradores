@@ -16,6 +16,45 @@
         const params = new URLSearchParams(Window.location.search);
         const nome = params.get('user');
 
+        //2. mapa de colaboradores e suas planilhas
+
+        const planilhas = {
+            "Jéssica": [
+                {
+                    nome: "Gestão de Carteira | Carrinho Abandonado",
+                    link: "https://docs.google.com/spreadsheets/d/1a0U6ngM_TXEmYapkZER9-Q79kBBFuDdx1KbM8EcwHQk/edit?gid=480558653#gid=480558653"
+                },
+                
+            ]
+        };
+
+        //Para atualizar o título
+
+        document.getElementById('userName').textContext = `Ambiente de ${nome}`;
+
+        //Montar os botões dinamicamente
+
+        const divAcoes = document.getElementById('acoes');
+        if (planilhas[nome]) {
+            planilhas[nome].forEach(item => {
+                const btn = document.createElement('button');
+                btn.textContext = item.nome;
+                btn.onclick = () => window.open(item.link, "_blink");
+                divAcoes.appendChild(btn)
+            });
+        } else {
+            divAcoes.textContent = "Nenhuma planilha configurada para este colaborador";
+        }
+        </script>
+</body>
+</html>
+
+
+
+    
+
+    
+
         
 
 
